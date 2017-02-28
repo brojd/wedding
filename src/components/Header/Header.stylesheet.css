@@ -1,4 +1,8 @@
 .Header {
+  background: rgba(255, 255, 255, 0.88);
+  z-index: 5;
+  width: 100%;
+  position: fixed;
   height: 90px;
   letter-spacing: 2px;
   padding: 30px;
