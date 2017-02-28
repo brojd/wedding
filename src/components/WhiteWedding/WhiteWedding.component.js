@@ -1,16 +1,13 @@
 import React from 'react';
 import styles from './WhiteWedding.stylesheet.css';
-import classnames from 'classnames';
+import SectionHeading from '../SectionHeading/SectionHeading.component';
+import SectionText from '../SectionText/SectionText.component';
 
 const WhiteWedding = ({ imgUrl, text }) => {
   return (
-    <section className={classnames(styles.WhiteWedding, "container-fluid")}>
-      <section className={classnames(styles.textSection, "col-md-6")}>
-        text section
-      </section>
-      <section className={classnames(styles.imgSection, "col-md-6")}>
-        <img src={imgUrl} className={styles.img}/>
-      </section>
+    <section className={styles.WhiteWedding}>
+      <SectionHeading text="ślub" />
+      <SectionText text={text} />
     </section>
   )
 };

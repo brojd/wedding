@@ -9,6 +9,6 @@ module.exports = {
   },
   whiteWedding: {
     imgUrl: 'https://az-serwer1798119.online.pro/images/kosciol.jpg',
-    text: ''
+    text: 'Ślub odbędzie się o godzinie 14:00 w kościele Św. Eugeniusza de Mazenod na ul. Ligonia 22 w Kędzierzynie-Koźlu. Pod kościołem będzie czekały autokary, którymi udamy się w miejsce wesela.'
   }
 };

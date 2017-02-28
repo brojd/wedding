@@ -7,7 +7,7 @@ const HeadingUnderline = ({ width }) => {
     width: width / 2
   };
   return (
-    <div>
+    <div className={styles.HeadingUnderline}>
       <div style={lineStyle} className={styles.line}></div>
       <span className={classNames("glyphicon glyphicon-grain", styles.icon)}></span>
       <div style={lineStyle} className={styles.line}></div>
