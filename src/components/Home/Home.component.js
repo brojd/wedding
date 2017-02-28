@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.stylesheet.css';
 
-const Home = ({ brideName, groomName, date, backgroundUrl }) => {
+const Home = ({ backgroundUrl, smallText, largeText }) => {
   const homeStyle = {
     background: 'url(' + backgroundUrl + ') fixed center no-repeat',
     backgroundSize: 'cover'
@@ -10,8 +10,8 @@ const Home = ({ brideName, groomName, date, backgroundUrl }) => {
     <section className={styles.Home} style={homeStyle}>
       <div className={styles.backgroundWrapper}>
         <div className={styles.textWrapper}>
-          <p className={styles.names}>{brideName} i {groomName}</p>
-          <p className={styles.date}>{date}</p>
+          <h2 className={styles.smallText}>{smallText}</h2>
+          <h1 className={styles.largeText}>{largeText}</h1>
         </div>
       </div>
     </section>
