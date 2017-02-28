@@ -1,15 +1,12 @@
 .WhiteWedding {
   height: 100vh; }
 
-.imgWrapper {
-  background: radial-gradient(white 20%, red 80%);
-  height: 400px;
-  width: 442px;
-  margin: 0 auto; }
-
 .img {
-  height: 400px;
-  width: 442px;
-  margin: 0 auto; }
+  height: 294px;
+  width: auto;
+  margin: 25px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #616161;
+  display: block; }
 
 /*# sourceMappingURL=WhiteWedding.stylesheet.css.map */
