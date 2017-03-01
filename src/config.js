@@ -50,6 +50,8 @@ module.exports = {
     text: 'Goście nasi ukochani, my już w domu wszystko mamy. Chcecie coś nam podarować, dajcie śwince się radować! Dodatkowo zamiast kwiatów, które uschną w naszym domu, propozycje mamy taką: byśmy razem wino pili, konwenanse odrzucili! Niechaj rosną nam kwiateczki, Wy przynieście wina z beczki :)'
   },
   contact: {
-    text: 'Jeżeli macie jakiekolwiek pytania lub chcielibyście potwierdzić obecność na weselu, skontaktujcie się z nami telefonicznie lub przy pomocy poniższego formularza:'
+    text: 'Jeżeli macie jakiekolwiek pytania lub chcielibyście potwierdzić obecność na weselu, skontaktujcie się z nami telefonicznie',
+    bridePhotoUrl: '',
+    groomPhotoUrl: ''
   }
 };
