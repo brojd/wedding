@@ -1,11 +1,15 @@
 import React from 'react';
+import SectionHeading from '../SectionHeading/SectionHeading.component';
+import SectionText from '../SectionText/SectionText.component';
 import styles from './Hotel.stylesheet.css';
 
-const Hotel = ({}) => {
+const Hotel = ({ imgUrl, text }) => {
   return (
-    <div className={styles.Hotel}>
-      hotel
-    </div>
+    <section className={styles.Hotel}>
+      <SectionHeading text='Hotel' />
+      <SectionText text={text} />
+      <img src={imgUrl} alt="hotel" className={styles.img} />
+    </section>
   )
 };
 

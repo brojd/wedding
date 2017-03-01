@@ -14,5 +14,9 @@ module.exports = {
   weddingParty: {
     videoUrl: 'https://www.youtube.com/embed/5rFeiznbSug',
     text: '2 maja będziemy się bawić w karczmie Wrazidlok w Nieborowicach około 30 km od Kędzierzyna-Koźla. Będzie dużo jedzenia, picia, a o taneczny nastrój zadba zespół Grajmofon z Wrocławia. Przygotujcie się na zakwasy :)'
+  },
+  hotel: {
+    imgUrl: 'https://az-serwer1798119.online.pro/images/hotel.jpg',
+    text: 'Wszystkich przyjezdnych ugościmy w hotelu Dworska Elektrownia na ul. Aleksandra Puszkina 1 w Kędzierzynie-Koźlu. Doba hotelowa trwa od 14:00 do 12:00, ale przed ślubem można zostawić rzeczy w hotelu. Następnego dnia zapraszamy do hotelowej restauracji na śniadanie.'
   }
 };
