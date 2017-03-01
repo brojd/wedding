@@ -7,7 +7,7 @@ import Hotel from '../../components/Hotel/Hotel.component';
 import Transport from '../../components/Transport/Transport.component';
 import Gifts from '../../components/Gifts/Gifts.component';
 import ContactContainer from '../Contact/Contact.container';
-import { brideName, groomName, date, home, whiteWedding, weddingParty, hotel, transport } from '../../config';
+import { brideName, groomName, date, home, whiteWedding, weddingParty, hotel, transport, gifts } from '../../config';
 
 
 class WeddingContainer extends Component {
@@ -57,7 +57,7 @@ class WeddingContainer extends Component {
         <Transport text={transport.text}
                    videoId={transport.videoId}
                    schedule={transport.schedule} />
-        <Gifts />
+        <Gifts text={gifts.text} imgUrl={gifts.imgUrl} />
         <ContactContainer />
       </div>
     )

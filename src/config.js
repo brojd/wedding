@@ -44,5 +44,9 @@ module.exports = {
         to: 'Dworska Elektrownia, Piasty - przystanek, Kuźniczki, Pogorzelec, Koźle'
       }
     ]
+  },
+  gifts: {
+    imgUrl: 'https://az-serwer1798119.online.pro/images/wrazidlok.jpg',
+    text: 'Goście nasi ukochani, my już w domu wszystko mamy. Chcecie coś nam podarować, dajcie śwince się radować! Dodatkowo zamiast kwiatów, które uschną w naszym domu, propozycje mamy taką: byśmy razem wino pili, konwenanse odrzucili! Niechaj rosną nam kwiateczki, Wy przynieście wina z beczki :)'
   }
 };
