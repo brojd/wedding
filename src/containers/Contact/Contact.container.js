@@ -5,7 +5,7 @@ class ContactContainer extends Component {
   render() {
     return (
       <div>
-        <Contact />
+        <Contact text={this.props.text} />
       </div>
     )
   }
