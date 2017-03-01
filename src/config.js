@@ -20,7 +20,29 @@ module.exports = {
     text: 'Wszystkich przyjezdnych ugościmy w hotelu Dworska Elektrownia na ul. Aleksandra Puszkina 1 w Kędzierzynie-Koźlu. Doba hotelowa trwa od 14:00 do 12:00, ale przed ślubem można zostawić rzeczy w hotelu. Następnego dnia zapraszamy do hotelowej restauracji na śniadanie.'
   },
   transport: {
-    videoUrl: 'https://www.youtube.com/embed/YjNmHHZ3ufM',
-    text: 'some text'
+    videoId: 'YjNmHHZ3ufM',
+    text: 'W trakcie całej uroczystości będziemy przemieszczać się dwoma wynajętymi autakarami. Poniżej znajdziecie rozpiskę odjazdów:',
+    schedule: [
+      {
+        time: '13:20',
+        from: 'Dworska Elektrownia',
+        to: 'Kościół - Pogorzelec'
+      },
+      {
+        time: '15:00',
+        from: 'Kościół - Pogorzelec',
+        to: 'Karczma Wrazidlok - Nieborowice'
+      },
+      {
+        time: '1:00 - 1:30',
+        from: 'Karczma Wrazidlok - Nieborowice',
+        to: 'Dworska Elektrownia, Piasty - przystanek, Kuźniczki, Pogorzelec, Koźle'
+      },
+      {
+        time: '5:00 - 5:30',
+        from: 'Karczma Wrazidlok - Nieborowice',
+        to: 'Dworska Elektrownia, Piasty - przystanek, Kuźniczki, Pogorzelec, Koźle'
+      }
+    ]
   }
 };

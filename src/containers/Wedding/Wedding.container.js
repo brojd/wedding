@@ -15,8 +15,7 @@ class WeddingContainer extends Component {
   constructor() {
     super();
     this.state = {
-      partyVideoOn: false,
-      transportVideoOn: false
+      partyVideoOn: false
     };
   }
 
@@ -33,19 +32,6 @@ class WeddingContainer extends Component {
         && this.state.partyVideoOn
       ) {
         this.setState({ partyVideoOn: false });
-      }
-      if (
-        window.scrollY / window.innerHeight > 3 &&
-        window.scrollY / window.innerHeight < 4.9 &&
-        !this.state.transportVideoOn
-      ) {
-        console.log('on');
-        this.setState({ transportVideoOn: true });
-      } else if (
-        (window.scrollY / window.innerHeight < 3 || window.scrollY / window.innerHeight > 4.9)
-        && this.state.transportVideoOn
-      ) {
-        this.setState({ transportVideoOn: false });
       }
     }
   }
@@ -69,8 +55,8 @@ class WeddingContainer extends Component {
                       videoPlayOn={this.state.partyVideoOn} />
         <Hotel imgUrl={hotel.imgUrl} text={hotel.text} />
         <Transport text={transport.text}
-                   videoUrl={transport.videoUrl}
-                   videoPlayOn={this.state.transportVideoOn} />
+                   videoId={transport.videoId}
+                   schedule={transport.schedule} />
         <Gifts />
         <ContactContainer />
       </div>
