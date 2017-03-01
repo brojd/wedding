@@ -7,10 +7,39 @@ import Hotel from '../../components/Hotel/Hotel.component';
 import Transport from '../../components/Transport/Transport.component';
 import Gifts from '../../components/Gifts/Gifts.component';
 import ContactContainer from '../Contact/Contact.container';
-import { brideName, groomName, date, home, whiteWedding } from '../../config';
+import { brideName, groomName, date, home, whiteWedding, weddingParty } from '../../config';
 
 
 class WeddingContainer extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      videoPlayOn: false
+    };
+  }
+
+  componentDidMount() {
+    window.onscroll = () => {
+      if (
+        window.scrollY / window.innerHeight > 1 &&
+        window.scrollY / window.innerHeight < 2.9 &&
+        !this.state.videoPlayOn
+      ) {
+        this.setState({ videoPlayOn: true });
+      } else if (
+        (window.scrollY / window.innerHeight < 1 || window.scrollY / window.innerHeight > 2.9)
+        && this.state.videoPlayOn
+      ) {
+        this.setState({ videoPlayOn: false });
+      }
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('onscroll');
+  }
+
   render() {
     return (
       <div>
@@ -21,7 +50,7 @@ class WeddingContainer extends Component {
               smallText={home.smallText}
               largeText={home.largeText} />
         <WhiteWedding imgUrl={whiteWedding.imgUrl} text={whiteWedding.text} />
-        <WeddingParty />
+        <WeddingParty videoUrl={weddingParty.videoUrl} text={weddingParty.text} videoPlayOn={this.state.videoPlayOn} />
         <Hotel />
         <Transport />
         <Gifts />

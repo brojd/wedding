@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styles from './Hotel.stylesheet.css';
 
-class Hotel extends Component {
-  render() {
-    return (
-      <div className={styles.Hotel}>
-        hotel
-      </div>
-    )
-  }
-}
+const Hotel = ({}) => {
+  return (
+    <div className={styles.Hotel}>
+      hotel
+    </div>
+  )
+};
 
 export default Hotel;

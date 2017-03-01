@@ -1,3 +1,6 @@
+.HeadingUnderline {
+  margin: 0 0 20px 0; }
+
 .line {
   border-bottom: 1px solid #d6d6d6;
   display: inline-block;
@@ -7,6 +10,6 @@
 .icon {
   font-size: 3.5rem;
   margin: 0 10px;
-  color: #733812; }
+  color: #af8367; }
 
 /*# sourceMappingURL=HeadingUnderline.stylesheet.css.map */

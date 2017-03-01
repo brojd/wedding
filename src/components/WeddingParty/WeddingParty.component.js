@@ -1,14 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
+import SectionHeading from '../SectionHeading/SectionHeading.component';
+import SectionText from '../SectionText/SectionText.component';
 import styles from './WeddingParty.stylesheet.css';
 
-class WeddingParty extends Component {
-  render() {
-    return (
-      <section className={styles.WeddingParty}>
-        wedding party
-      </section>
-    )
-  }
-}
+const WeddingParty = ({ videoUrl, text, videoPlayOn }) => {
+  return (
+    <section className={styles.WeddingParty}>
+      <SectionHeading text='Wesele' />
+      <SectionText text={text} />
+      {
+        videoPlayOn ?
+        <iframe src={`${videoUrl}?autoplay=1`} className={styles.video}></iframe> :
+        <iframe src={`${videoUrl}`} className={styles.video}></iframe>
+      }
+    </section>
+  )
+};
 
 export default WeddingParty;

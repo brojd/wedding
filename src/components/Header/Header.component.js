@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styles from './Header.stylesheet.css';
 
 const WeddingParty = ({ brideName, groomName, date}) => {

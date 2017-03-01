@@ -8,7 +8,7 @@ const WhiteWedding = ({ imgUrl, text }) => {
     <section className={styles.WhiteWedding}>
       <SectionHeading text="ślub" />
       <SectionText text={text} />
-      <img src={imgUrl} className={styles.img} />
+      <img src={imgUrl} className={styles.img} alt="church" />
     </section>
   )
 };
