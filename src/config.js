@@ -18,5 +18,9 @@ module.exports = {
   hotel: {
     imgUrl: 'https://az-serwer1798119.online.pro/images/hotel.jpg',
     text: 'Wszystkich przyjezdnych ugościmy w hotelu Dworska Elektrownia na ul. Aleksandra Puszkina 1 w Kędzierzynie-Koźlu. Doba hotelowa trwa od 14:00 do 12:00, ale przed ślubem można zostawić rzeczy w hotelu. Następnego dnia zapraszamy do hotelowej restauracji na śniadanie.'
+  },
+  transport: {
+    videoUrl: 'https://www.youtube.com/embed/YjNmHHZ3ufM',
+    text: 'some text'
   }
 };

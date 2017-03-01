@@ -7,7 +7,7 @@ import Hotel from '../../components/Hotel/Hotel.component';
 import Transport from '../../components/Transport/Transport.component';
 import Gifts from '../../components/Gifts/Gifts.component';
 import ContactContainer from '../Contact/Contact.container';
-import { brideName, groomName, date, home, whiteWedding, weddingParty, hotel } from '../../config';
+import { brideName, groomName, date, home, whiteWedding, weddingParty, hotel, transport } from '../../config';
 
 
 class WeddingContainer extends Component {
@@ -15,7 +15,8 @@ class WeddingContainer extends Component {
   constructor() {
     super();
     this.state = {
-      videoPlayOn: false
+      partyVideoOn: false,
+      transportVideoOn: false
     };
   }
 
@@ -24,14 +25,27 @@ class WeddingContainer extends Component {
       if (
         window.scrollY / window.innerHeight > 1 &&
         window.scrollY / window.innerHeight < 2.9 &&
-        !this.state.videoPlayOn
+        !this.state.partyVideoOn
       ) {
-        this.setState({ videoPlayOn: true });
+        this.setState({ partyVideoOn: true });
       } else if (
         (window.scrollY / window.innerHeight < 1 || window.scrollY / window.innerHeight > 2.9)
-        && this.state.videoPlayOn
+        && this.state.partyVideoOn
       ) {
-        this.setState({ videoPlayOn: false });
+        this.setState({ partyVideoOn: false });
+      }
+      if (
+        window.scrollY / window.innerHeight > 3 &&
+        window.scrollY / window.innerHeight < 4.9 &&
+        !this.state.transportVideoOn
+      ) {
+        console.log('on');
+        this.setState({ transportVideoOn: true });
+      } else if (
+        (window.scrollY / window.innerHeight < 3 || window.scrollY / window.innerHeight > 4.9)
+        && this.state.transportVideoOn
+      ) {
+        this.setState({ transportVideoOn: false });
       }
     }
   }
@@ -50,9 +64,13 @@ class WeddingContainer extends Component {
               smallText={home.smallText}
               largeText={home.largeText} />
         <WhiteWedding imgUrl={whiteWedding.imgUrl} text={whiteWedding.text} />
-        <WeddingParty videoUrl={weddingParty.videoUrl} text={weddingParty.text} videoPlayOn={this.state.videoPlayOn} />
+        <WeddingParty videoUrl={weddingParty.videoUrl}
+                      text={weddingParty.text}
+                      videoPlayOn={this.state.partyVideoOn} />
         <Hotel imgUrl={hotel.imgUrl} text={hotel.text} />
-        <Transport />
+        <Transport text={transport.text}
+                   videoUrl={transport.videoUrl}
+                   videoPlayOn={this.state.transportVideoOn} />
         <Gifts />
         <ContactContainer />
       </div>

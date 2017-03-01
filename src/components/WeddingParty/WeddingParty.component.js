@@ -10,8 +10,8 @@ const WeddingParty = ({ videoUrl, text, videoPlayOn }) => {
       <SectionText text={text} />
       {
         videoPlayOn ?
-        <iframe src={`${videoUrl}?autoplay=1`} className={styles.video}></iframe> :
-        <iframe src={`${videoUrl}`} className={styles.video}></iframe>
+        <iframe src={`${videoUrl}?controls=0&loop=1&autoplay=1`} className={styles.video}></iframe> :
+        <iframe src={`${videoUrl}?controls=0&loop=1`} className={styles.video}></iframe>
       }
     </section>
   )
