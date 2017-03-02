@@ -12,7 +12,7 @@ class Transport extends Component {
   }
 
   componentDidMount() {
-    window.onYouTubeIframeAPIReady = () => {
+    window.setTimeout(() => {
       let player;
       player = new window.YT.Player('transportVideo', {
         videoId: this.props.videoId, // YouTube Video ID
@@ -40,11 +40,7 @@ class Transport extends Component {
           }
         }
       });
-    }
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('onYouTubeIframeAPIReady');
+    }, 1000)
   }
 
   render() {
