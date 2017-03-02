@@ -1,0 +1,35 @@
+.Nav {
+  display: inline-block;
+  float: right;
+  position: relative; }
+
+.link {
+  color: #a8a8a7;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-weight: 500;
+  display: inline-block;
+  width: 110px;
+  text-align: center;
+  position: relative;
+  top: -2px; }
+
+.link:hover:not(.currentLink) {
+  color: #a8a8a7;
+  text-decoration: none;
+  background: rgba(145, 110, 89, 0.11);
+  cursor: pointer; }
+
+.currentLink {
+  cursor: pointer;
+  text-decoration: none;
+  background: linear-gradient(to bottom right, rgba(146, 105, 81, 0.91), rgba(58, 22, 0, 0.77));
+  color: white; }
+
+.currentLink:hover {
+  color: white;
+  text-decoration: none; }
+
+/*# sourceMappingURL=Nav.stylesheet.css.map */
