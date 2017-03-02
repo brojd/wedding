@@ -4,10 +4,12 @@ import classNames from 'classnames';
 
 const SectionText = ({ text }) => {
   return (
-    <div className='container-fluid'>
-      <p className={classNames(styles.SectionText, 'col-md-6 col-md-offset-3')}>
-        {text}
-      </p>
+    <div className={classNames('container-fluid', styles.SectionText)}>
+      <div className={classNames('col-md-6 col-md-offset-3', styles.textWrapper)}>
+        <p className={styles.text}>
+          {text}
+        </p>
+      </div>
     </div>
   )
 };

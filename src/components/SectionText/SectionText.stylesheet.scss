@@ -1,4 +1,16 @@
 .SectionText {
+  height: 30%;
+}
+
+.textWrapper {
+  height: 100%;
+  position: relative;
+}
+
+.text {
   text-align: center;
   font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

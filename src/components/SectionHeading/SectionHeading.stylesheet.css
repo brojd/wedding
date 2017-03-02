@@ -1,6 +1,12 @@
 .SectionHeading {
   text-align: center;
-  font-size: 6rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 16vh;
+  padding: 2vh 0; }
+
+.text {
+  font-size: 6rem; }
 
 /*# sourceMappingURL=SectionHeading.stylesheet.css.map */

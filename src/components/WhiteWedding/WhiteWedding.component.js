@@ -7,8 +7,12 @@ const WhiteWedding = ({ imgUrl, text }) => {
   return (
     <section className={styles.WhiteWedding}>
       <SectionHeading text="ślub" />
-      <SectionText text={text} />
-      <img src={imgUrl} className={styles.img} alt="church" />
+      <div className={styles.contentWrapper}>
+        <SectionText text={text} />
+        <div className={styles.imgWrapper}>
+          <img src={imgUrl} className={styles.img} alt="church" />
+        </div>
+      </div>
     </section>
   )
 };

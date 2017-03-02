@@ -4,10 +4,10 @@ import HeadingUnderline from '../HeadingUnderline/HeadingUnderline.component';
 
 const SectionHeading = ({ text }) => {
   return (
-    <h2 className={styles.SectionHeading}>
-      {text}
+    <div className={styles.SectionHeading}>
+      <span className={styles.text}>{text}</span>
       <HeadingUnderline width={300}/>
-    </h2>
+    </div>
   )
 };
 
