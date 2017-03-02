@@ -13,11 +13,11 @@ const Contact = ({ text, bridePhotoUrl, groomPhotoUrl, bridePhone, groomPhone })
           <SectionText text={text} />
           <section className={styles.contacts}>
             <article className={styles.singleContact}>
-              <img src={bridePhotoUrl} alt="bride_photo" className={styles.photo}/>
+              <img src={bridePhotoUrl} alt="bride" className={styles.photo}/>
               <div>{bridePhone}</div>
             </article>
             <article className={styles.singleContact}>
-              <img src={groomPhotoUrl} alt="groom_photo" className={styles.photo} />
+              <img src={groomPhotoUrl} alt="groom" className={styles.photo} />
               <div>{groomPhone}</div>
             </article>
           </section>

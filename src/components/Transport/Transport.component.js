@@ -7,14 +7,9 @@ import { Element } from 'react-scroll';
 
 class Transport extends Component {
 
-  constructor() {
-    super();
-  }
-
   componentDidMount() {
     window.setTimeout(() => {
-      let player;
-      player = new window.YT.Player('transportVideo', {
+      new window.YT.Player('transportVideo', {
         videoId: this.props.videoId, // YouTube Video ID
         playerVars: {
           autoplay: 1,        // Auto-play the video on load
