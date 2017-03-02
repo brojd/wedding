@@ -26,7 +26,7 @@ class Transport extends Component {
           iv_load_policy: 3,  // Hide the Video Annotations
           autohide: 1,         // Hide video controls when playing
           start: 7,
-          end: 210
+          end: 80
         },
         events: {
           onReady: (event) => {
@@ -49,10 +49,12 @@ class Transport extends Component {
   render() {
     return (
       <section className={styles.Transport}>
+        <div id="transportVideo" className={styles.video}></div>
         <SectionHeading text='Transport' />
-        <SectionText text={this.props.text} />
-            <div id="transportVideo" className={styles.video}></div>
-        <TransportSchedule schedule={this.props.schedule} />
+        <div className={styles.contentWrapper}>
+          <SectionText text={this.props.text} />
+          <TransportSchedule schedule={this.props.schedule} />
+        </div>
       </section>
     )
   }
