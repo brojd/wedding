@@ -1,13 +1,23 @@
 .Hotel {
-  height: 100vh;
-  margin-top: 40px; }
+  height: 100vh; }
+
+.contentWrapper {
+  height: 84vh;
+  position: relative; }
+
+.imgWrapper {
+  height: 70%;
+  position: relative; }
 
 .img {
-  height: 50vh;
+  height: 40vh;
   width: auto;
-  margin: 5vh auto;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 #616161;
-  display: block; }
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=Hotel.stylesheet.css.map */

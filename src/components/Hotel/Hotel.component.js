@@ -7,8 +7,12 @@ const Hotel = ({ imgUrl, text }) => {
   return (
     <section className={styles.Hotel}>
       <SectionHeading text='Hotel' />
-      <SectionText text={text} />
-      <img src={imgUrl} alt="hotel" className={styles.img} />
+      <div className={styles.contentWrapper}>
+        <SectionText text={text} />
+        <div className={styles.imgWrapper}>
+          <img src={imgUrl} alt="hotel" className={styles.img} />
+        </div>
+      </div>
     </section>
   )
 };
