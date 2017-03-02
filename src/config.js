@@ -53,7 +53,7 @@ module.exports = {
     text: 'Jeżeli macie jakiekolwiek pytania lub chcielibyście potwierdzić obecność na weselu, skontaktujcie się z nami telefonicznie:',
     bridePhotoUrl: 'https://az-serwer1798119.online.pro/images/magda.png',
     groomPhotoUrl: 'https://az-serwer1798119.online.pro/images/don.png',
-    bridePhone: '508 2015 165',
+    bridePhone: '508 205 165',
     groomPhone: '698 892 831'
   }
 };

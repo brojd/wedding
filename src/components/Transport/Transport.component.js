@@ -3,6 +3,7 @@ import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
 import TransportSchedule from '../TransportSchedule/TransportSchedule.component';
 import styles from './Transport.stylesheet.css';
+import { Element } from 'react-scroll';
 
 class Transport extends Component {
 
@@ -48,16 +49,18 @@ class Transport extends Component {
 
   render() {
     return (
-      <section className={styles.Transport}>
-        <div id="transportVideo" className={styles.video}></div>
-        <SectionHeading text='Transport' />
-        <div className={styles.contentWrapper}>
-          <SectionText text={this.props.text} />
-          <TransportSchedule schedule={this.props.schedule} />
-        </div>
-      </section>
+      <Element name="Transport">
+        <section className={styles.Transport}>
+          <div id="transportVideo" className={styles.video}></div>
+          <SectionHeading text='Transport' />
+          <div className={styles.contentWrapper}>
+            <SectionText text={this.props.text} />
+            <TransportSchedule schedule={this.props.schedule} />
+          </div>
+        </section>
+      </Element>
     )
   }
-};
+}
 
 export default Transport;
