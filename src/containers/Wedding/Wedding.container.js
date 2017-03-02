@@ -59,7 +59,11 @@ class WeddingContainer extends Component {
                    videoId={transport.videoId}
                    schedule={transport.schedule} />
         <Gifts text={gifts.text} imgUrl={gifts.imgUrl} />
-        <ContactContainer text={contact.text} />
+        <ContactContainer text={contact.text}
+                          bridePhotoUrl={contact.bridePhotoUrl}
+                          groomPhotoUrl={contact.groomPhotoUrl}
+                          bridePhone={contact.bridePhone}
+                          groomPhone={contact.groomPhone} />
       </div>
     )
   }

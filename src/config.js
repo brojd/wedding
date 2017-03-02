@@ -50,8 +50,10 @@ module.exports = {
     text: 'Goście nasi ukochani, my już w domu wszystko mamy. Chcecie coś nam podarować, dajcie śwince się radować! Dodatkowo zamiast kwiatów, które uschną w naszym domu, propozycje mamy taką: byśmy razem wino pili, konwenanse odrzucili! Niechaj rosną nam kwiateczki, Wy przynieście wina z beczki :)'
   },
   contact: {
-    text: 'Jeżeli macie jakiekolwiek pytania lub chcielibyście potwierdzić obecność na weselu, skontaktujcie się z nami telefonicznie',
-    bridePhotoUrl: '',
-    groomPhotoUrl: ''
+    text: 'Jeżeli macie jakiekolwiek pytania lub chcielibyście potwierdzić obecność na weselu, skontaktujcie się z nami telefonicznie:',
+    bridePhotoUrl: 'https://az-serwer1798119.online.pro/images/magda.png',
+    groomPhotoUrl: 'https://az-serwer1798119.online.pro/images/don.png',
+    bridePhone: '508 2015 165',
+    groomPhone: '698 892 831'
   }
 };
