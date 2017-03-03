@@ -1,7 +1,7 @@
 module.exports = {
   brideName: 'Magda',
   groomName: 'Dominik',
-  date: '2.05.2017',
+  date: '2017-05-02T14:00:00',
   home: {
     backgroundUrl: 'https://az-serwer1798119.online.pro/images/wrazidlok3.jpg',
     smallText: 'serdecznie zapraszamy na',
