@@ -17,6 +17,7 @@ class CountdownContainer extends Component {
   }
 
   componentDidMount() {
+    this.updateTimeRemaining(new Date(), new Date(this.props.date));
     window.setInterval(() => this.updateTimeRemaining(new Date(), new Date(this.props.date)), 1000);
   }
 
