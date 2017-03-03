@@ -3,7 +3,6 @@
   padding-top: 20px;
   position: relative;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.55);
   color: white;
 }
 
@@ -14,4 +13,13 @@
   width: 140%;
   height: 160%;
   z-index: -1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .video {
+    top: -60%;
+    left: -30%;
+    width: 200%;
+    height: 220%;
+  }
 }
