@@ -25,5 +25,8 @@
   .img {
     width: 100vw;
     height: auto; } }
+@media only screen and (max-width: 500px) {
+  .imgWrapper {
+    height: 42%; } }
 
 /*# sourceMappingURL=Hotel.stylesheet.css.map */

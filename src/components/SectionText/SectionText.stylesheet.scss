@@ -20,3 +20,9 @@
     font-size: 1.6rem
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .SectionText {
+    height: 50%
+  }
+}
