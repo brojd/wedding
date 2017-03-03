@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Countdown from '../../components/Countdown/Countdown.component';
+import Countdown from '../../components/Countdown/Countdown.component';
 
 class CountdownContainer extends Component {
 
@@ -31,10 +31,10 @@ class CountdownContainer extends Component {
     const secondsRemaining = (minutesRemaining - Math.floor(minutesRemaining)) * 60;
     return (
       <div>
-        <p>days {Math.floor(daysRemaining)}</p>
-        <p>hours {Math.floor(hoursRemaining)}</p>
-        <p>minutes {Math.floor(minutesRemaining)}</p>
-        <p>seconds {Math.floor(secondsRemaining)}</p>
+        <Countdown text='DNI' time={Math.floor(daysRemaining)} />
+        <Countdown text='GODZINY' time={Math.floor(hoursRemaining)} />
+        <Countdown text='MINUTY' time={Math.floor(minutesRemaining)} />
+        <Countdown text='SEKUNDY' time={Math.floor(secondsRemaining)} />
       </div>
     )
   }

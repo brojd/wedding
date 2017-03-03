@@ -18,7 +18,10 @@ const Home = ({ backgroundUrl, smallText, largeText, date }) => {
             <h2 className={styles.smallText}>{smallText}</h2>
             <h1 className={styles.largeText}>{largeText}</h1>
             <h2 className={styles.date}>{dateToDisplay}</h2>
-            <CountdownContainer date={date} />
+            <div className={styles.countdownWrapper}>
+              <h3 className={styles.countdownHeading}>Pozostało:</h3>
+              <CountdownContainer date={date} />
+            </div>
           </div>
         </div>
       </section>

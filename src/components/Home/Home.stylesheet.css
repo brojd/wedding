@@ -17,6 +17,12 @@
   color: white;
   text-shadow: -1px -1px 3px black; }
 
+.countdownWrapper {
+  margin-top: 18vh; }
+
+.countdownHeading {
+  margin-bottom: 30px; }
+
 .smallText {
   font-size: 3.7rem;
   font-weight: 100; }
