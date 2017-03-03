@@ -1,0 +1,14 @@
+.Footer {
+  height: 2vh;
+  line-height: 2vh;
+  font-size: 1.2rem;
+  text-align: center;
+  background: none;
+  background: black;
+  color: white; }
+
+@media only screen and (max-width: 500px) {
+  .Footer {
+    font-size: 1rem; } }
+
+/*# sourceMappingURL=Footer.stylesheet.css.map */

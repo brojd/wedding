@@ -6,6 +6,7 @@ import WeddingParty from '../../components/WeddingParty/WeddingParty.component';
 import Hotel from '../../components/Hotel/Hotel.component';
 import Transport from '../../components/Transport/Transport.component';
 import Gifts from '../../components/Gifts/Gifts.component';
+import Footer from '../../components/Footer/Footer.component';
 import ContactContainer from '../Contact/Contact.container';
 import { brideName, groomName, date, home, whiteWedding, weddingParty,
   hotel, transport, gifts, contact } from '../../config';
@@ -65,6 +66,7 @@ class WeddingContainer extends Component {
                           groomPhotoUrl={contact.groomPhotoUrl}
                           bridePhone={contact.bridePhone}
                           groomPhone={contact.groomPhone} />
+        <Footer text="Copyright 2017 Dominik Broj" />
       </div>
     )
   }
