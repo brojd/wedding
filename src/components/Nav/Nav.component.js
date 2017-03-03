@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import styles from './Nav.stylesheet.css';
 import classNames from 'classnames';

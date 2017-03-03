@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
 import styles from './Contact.stylesheet.css';
@@ -25,6 +25,14 @@ const Contact = ({ text, bridePhotoUrl, groomPhotoUrl, bridePhone, groomPhone })
       </section>
     </Element>
   )
+};
+
+Contact.propTypes = {
+  text: PropTypes.string,
+  bridePhotoUrl: PropTypes.string,
+  groomPhotoUrl: PropTypes.string,
+  bridePhone: PropTypes.string,
+  groomPhone: PropTypes.string
 };
 
 export default Contact;

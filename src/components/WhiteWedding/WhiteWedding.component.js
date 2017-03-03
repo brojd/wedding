@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styles from './WhiteWedding.stylesheet.css';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
@@ -18,6 +18,11 @@ const WhiteWedding = ({ imgUrl, text }) => {
       </section>
     </Element>
   )
+};
+
+WhiteWedding.propTypes = {
+  imgUrl: PropTypes.string,
+  text: PropTypes.string
 };
 
 export default WhiteWedding;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
 import styles from './WeddingParty.stylesheet.css';
@@ -24,6 +24,12 @@ const WeddingParty = ({ videoUrl, text, videoPlayOn }) => {
       </section>
     </Element>
   )
+};
+
+WeddingParty.propTypes = {
+  videoUrl: PropTypes.string,
+  text: PropTypes.string,
+  videoPlayOn: PropTypes.bool
 };
 
 export default WeddingParty;

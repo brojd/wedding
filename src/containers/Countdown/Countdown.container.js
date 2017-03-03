@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Countdown from '../../components/Countdown/Countdown.component';
 
 class CountdownContainer extends Component {
@@ -40,5 +40,9 @@ class CountdownContainer extends Component {
     )
   }
 }
+
+CountdownContainer.propTypes = {
+  date: PropTypes.string
+};
 
 export default CountdownContainer;

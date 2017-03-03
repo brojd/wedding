@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
 import styles from './Hotel.stylesheet.css';
@@ -18,6 +18,11 @@ const Hotel = ({ imgUrl, text }) => {
       </section>
     </Element>
   )
+};
+
+Hotel.propTypes = {
+  imgUrl: PropTypes.string,
+  text: PropTypes.string
 };
 
 export default Hotel;

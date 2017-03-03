@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styles from './HeadingUnderline.stylesheet.css';
 import classNames from 'classnames';
 
@@ -13,6 +13,10 @@ const HeadingUnderline = ({ width }) => {
       <div style={lineStyle} className={styles.line}></div>
     </div>
   )
+};
+
+HeadingUnderline.propTypes = {
+  width: PropTypes.number
 };
 
 export default HeadingUnderline;

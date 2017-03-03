@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styles from './Gifts.stylesheet.css';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
@@ -18,6 +18,11 @@ const Gifts = ({ imgUrl, text }) => {
       </section>
     </Element>
   )
+};
+
+Gifts.propTypes = {
+  imgUrl: PropTypes.string,
+  text: PropTypes.string
 };
 
 export default Gifts;

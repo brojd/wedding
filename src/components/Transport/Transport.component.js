@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
 import TransportSchedule from '../TransportSchedule/TransportSchedule.component';
@@ -59,5 +59,10 @@ class Transport extends Component {
     )
   }
 }
+
+Transport.propTypes = {
+  text: PropTypes.string,
+  schedule: PropTypes.arrayOf(PropTypes.object)
+};
 
 export default Transport;

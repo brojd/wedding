@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styles from './Home.stylesheet.css';
 import { Element } from 'react-scroll';
 import CountdownContainer from '../../containers/Countdown/Countdown.container';
@@ -27,6 +27,13 @@ const Home = ({ backgroundUrl, smallText, largeText, date }) => {
       </section>
     </Element>
   )
+};
+
+Home.propTypes = {
+  backgroundUrl: PropTypes.string,
+  smallText: PropTypes.string,
+  largeText: PropTypes.string,
+  date: PropTypes.string
 };
 
 export default Home;

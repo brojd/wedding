@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styles from './TransportSchedule.stylesheet.css';
 import classNames from 'classnames';
 
@@ -29,6 +29,10 @@ const TransportSchedule = ({ schedule }) => {
       </div>
     </div>
   )
+};
+
+TransportSchedule.PropTypes = {
+  schedule: PropTypes.arrayOf(PropTypes.object)
 };
 
 export default TransportSchedule;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styles from './Countdown.stylesheet.css';
 
 const Countdown = ({ text, time }) => {
@@ -10,6 +10,11 @@ const Countdown = ({ text, time }) => {
       </div>
     </article>
   )
+};
+
+Countdown.propTypes = {
+  text: PropTypes.string,
+  date: PropTypes.string
 };
 
 export default Countdown;

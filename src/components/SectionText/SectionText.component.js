@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styles from './SectionText.stylesheet.css';
 import classNames from 'classnames';
 
@@ -12,6 +12,10 @@ const SectionText = ({ text }) => {
       </div>
     </div>
   )
+};
+
+SectionText.propTypes = {
+  text: PropTypes.string
 };
 
 export default SectionText;
