@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 const HeadingUnderline = ({ width }) => {
   const lineStyle = {
-    width: width / 2
+    width: window.innerWidth > 700 ? width / 2 : width / 3.8
   };
   return (
     <div className={styles.HeadingUnderline}>
