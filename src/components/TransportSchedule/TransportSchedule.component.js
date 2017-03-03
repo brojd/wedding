@@ -6,7 +6,7 @@ const TransportSchedule = ({ schedule }) => {
   return (
     <div className={classNames(styles.TransportSchedule, 'container-fluid')}>
       <div className='col-md-offset-3 col-md-6'>
-        <div className={styles.scheduleTable}>
+        <div className={classNames(styles.scheduleTable, "table-responsive")}>
           <table className='table table-bordered'>
             <thead>
               <tr>

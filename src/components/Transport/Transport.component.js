@@ -12,17 +12,17 @@ class Transport extends Component {
     if (!isAny()) {
       window.setTimeout(() => {
         new window.YT.Player('transportVideo', {
-          videoId: this.props.videoId, // YouTube Video ID
+          videoId: this.props.videoId,
           playerVars: {
-            autoplay: 1,        // Auto-play the video on load
-            controls: 0,        // Show pause/play buttons in player
-            showinfo: 0,        // Hide the video title
-            modestbranding: 1,  // Hide the Youtube Logo
-            loop: 1,            // Run the video in a loop
-            fs: 1,              // Hide the full screen button
-            cc_load_policy: 0, // Hide closed captions
-            iv_load_policy: 3,  // Hide the Video Annotations
-            autohide: 1,         // Hide video controls when playing
+            autoplay: 1,
+            controls: 0,
+            showinfo: 0,
+            modestbranding: 1,
+            loop: 1,
+            fs: 1,
+            cc_load_policy: 0,
+            iv_load_policy: 3,
+            autohide: 1,
             start: 7,
             end: 80
           },

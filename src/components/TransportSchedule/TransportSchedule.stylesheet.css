@@ -1,7 +1,7 @@
 .TransportSchedule {
   height: 70%; }
 
-.scheduleTable {
+.scheduleTable table {
   background: linear-gradient(to bottom right, rgba(183, 118, 71, 0.49), #2b1a00); }
 
 /*# sourceMappingURL=TransportSchedule.stylesheet.css.map */
