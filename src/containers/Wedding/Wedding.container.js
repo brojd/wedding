@@ -49,7 +49,8 @@ class WeddingContainer extends Component {
                 date={date} />
         <Home backgroundUrl={home.backgroundUrl}
               smallText={home.smallText}
-              largeText={home.largeText} />
+              largeText={home.largeText}
+              date={date} />
         <WhiteWedding imgUrl={whiteWedding.imgUrl} text={whiteWedding.text} />
         <WeddingParty videoUrl={weddingParty.videoUrl}
                       text={weddingParty.text}

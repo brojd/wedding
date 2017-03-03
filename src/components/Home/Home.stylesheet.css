@@ -24,4 +24,31 @@
 .largeText {
   font-size: 7rem; }
 
+.date {
+  font-size: 3.7rem;
+  font-weight: 100;
+  font-style: italic; }
+
+@media only screen and (max-width: 750px) {
+  .smallText {
+    font-size: 3rem; }
+
+  .largeText {
+    font-size: 6rem; }
+
+  .date {
+    font-size: 3rem; } }
+@media only screen and (max-width: 450px) {
+  .smallText {
+    font-size: 2rem;
+    font-weight: 100; }
+
+  .largeText {
+    font-size: 4.5rem; }
+
+  .date {
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic; } }
+
 /*# sourceMappingURL=Home.stylesheet.css.map */
