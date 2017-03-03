@@ -26,12 +26,14 @@ class Nav extends Component {
       maxHeight: !this.state.dropdownVisible && window.innerWidth < 980 ? 0 : '300px'
     };
     const openStyles = {
-      opacity: this.state.dropdownVisible ? 0 : 1
+      opacity: this.state.dropdownVisible ? 0 : 1,
+      transition: 'opacity 0.5s ease-out'
     };
     const closeStyles = {
       opacity: this.state.dropdownVisible ? 1 : 0,
+      transition: 'opacity 0.5s ease-out',
       position: 'relative',
-      right: '18px',
+      right: '16px',
       top: '4px'
     };
     return (
