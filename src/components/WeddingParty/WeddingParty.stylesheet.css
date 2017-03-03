@@ -19,5 +19,8 @@
     left: -30%;
     width: 200%;
     height: 220%; } }
+@media only screen and (max-width: 500px) {
+  .img {
+    width: 80%; } }
 
 /*# sourceMappingURL=WeddingParty.stylesheet.css.map */
