@@ -1,7 +1,9 @@
 .Nav {
   display: inline-block;
   float: right;
-  position: relative; }
+  position: relative;
+  transition: max-height 0.4s ease-out;
+  overflow: hidden; }
 
 .link {
   color: #a8a8a7;
@@ -15,22 +17,34 @@
   text-align: center;
   position: relative;
   top: -2px; }
-
-.link:hover:not(.currentLink) {
-  color: #727271;
-  text-decoration: none;
-  background: rgba(145, 110, 89, 0.11);
-  cursor: pointer; }
+  .link:hover:not(.currentLink) {
+    color: #727271;
+    text-decoration: none;
+    background: rgba(145, 110, 89, 0.11);
+    cursor: pointer; }
 
 .currentLink {
   cursor: pointer;
   text-decoration: none;
-  background: linear-gradient(to bottom right, rgba(146, 105, 81, 0.91), rgba(58, 22, 0, 0.77));
+  background: linear-gradient(to bottom right, rgba(146, 105, 81, 0.91), rgba(58, 22, 0, 0.9));
   color: white; }
+  .currentLink:hover {
+    color: white;
+    text-decoration: none; }
 
-.currentLink:hover {
-  color: white;
-  text-decoration: none; }
+.dropdownButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 6;
+  display: none;
+  height: 10vh;
+  line-height: 10vh;
+  background: none;
+  border: none;
+  margin-right: 2vh; }
+  .dropdownButton:focus {
+    outline: none; }
 
 @media only screen and (max-width: 1250px) {
   .link {
@@ -45,6 +59,9 @@
     right: 0;
     left: 0; }
 
+  .dropdownButton {
+    display: inline-block; }
+
   .link {
     width: 100%;
     display: block;
@@ -58,22 +75,24 @@
     font-weight: 500;
     text-align: center;
     box-sizing: border-box;
-    box-shadow: 0 0 1px 0 gray; }
-
-  .link:hover:not(.currentLink) {
-    color: #727271;
-    text-decoration: none;
-    background: #dadada;
-    cursor: pointer; }
+    border-top: 1px solid #cccccc;
+    box-shadow: 0 0 8px 0 #cacaca; }
+    .link:last-child {
+      border-bottom: 1px solid #cccccc;
+      box-shadow: 0 0 8px 0 #cacaca; }
+    .link:hover:not(.currentLink) {
+      color: #727271;
+      text-decoration: none;
+      background: #dadada;
+      cursor: pointer; }
 
   .currentLink {
     cursor: pointer;
     text-decoration: none;
-    background: linear-gradient(to bottom right, rgba(146, 105, 81, 0.91), rgba(58, 22, 0, 0.9));
+    background: linear-gradient(to bottom right, #926951, #3a1600);
     color: white; }
-
-  .currentLink:hover {
-    color: white;
-    text-decoration: none; } }
+    .currentLink:hover {
+      color: white;
+      text-decoration: none; } }
 
 /*# sourceMappingURL=Nav.stylesheet.css.map */
