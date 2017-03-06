@@ -12,7 +12,7 @@ module.exports = {
     text: 'Ślub odbędzie się o godzinie 14:00 w kościele Św. Eugeniusza de Mazenod na ul. Ligonia 22 w Kędzierzynie-Koźlu. Pod kościołem będzie czekały autokary, którymi po mszy udamy się w miejsce wesela.'
   },
   weddingParty: {
-    videoUrl: 'https://www.youtube.com/embed/5rFeiznbSug',
+    videoId: '5rFeiznbSug',
     text: '2 maja będziemy się bawić w karczmie Wrazidlok w Nieborowicach około 30 km od Kędzierzyna-Koźla. Będzie dużo jedzenia, picia, a o taneczny nastrój zadba zespół Grajmofon z Wrocławia. Przygotujcie się na zakwasy :)'
   },
   hotel: {

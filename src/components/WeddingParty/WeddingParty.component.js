@@ -1,35 +1,57 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
 import styles from './WeddingParty.stylesheet.css';
 import { Element } from 'react-scroll';
-import { isAny } from '../../helpers/isMobile';
 
-const WeddingParty = ({ videoUrl, text, videoPlayOn }) => {
-  const WeddingPartyStyles = {
-    background: isAny() ? 'linear-gradient(to bottom, #634730, #0e0a06)' : 'rgba(0, 0, 0, 0.55)'
-  };
-  return (
-    <Element name='WeddingParty'>
-      <section className={styles.WeddingParty} style={WeddingPartyStyles}>
-        <SectionHeading text='Wesele' />
-        <SectionText text={text} />
-        {
-          isAny() ?
-            null :
-            videoPlayOn ?
-              <iframe src={`${videoUrl}?controls=0&loop=1&autoplay=1`} className={styles.video}></iframe> :
-              <iframe src={`${videoUrl}?controls=0&loop=1`} className={styles.video}></iframe>
+class WeddingParty extends Component {
+
+  componentDidMount() {
+    window.setTimeout(() => {
+      new window.YT.Player('partyVideo', {
+        videoId: this.props.videoId,
+        playerVars: {
+          autoplay: 1,
+          controls: 0,
+          showinfo: 0,
+          modestbranding: 1,
+          loop: 1,
+          fs: 1,
+          cc_load_policy: 0,
+          iv_load_policy: 3,
+          autohide: 1,
+          start: 75
+        },
+        events: {
+          onReady: (event) => {
+            event.target.playVideo();
+          },
+          onStateChange: (event) => {
+            if (event.data === 0) {
+              event.target.seekTo(1);
+            }
+          }
         }
-      </section>
-    </Element>
-  )
-};
+      });
+    }, 1000);
+  }
+
+  render() {
+    return (
+      <Element name='WeddingParty'>
+        <section className={styles.WeddingParty}>
+          <SectionHeading text='Wesele' />
+          <SectionText text={this.props.text} />
+          <div id="partyVideo" className={styles.video}></div>
+        </section>
+      </Element>
+    )
+  }
+}
 
 WeddingParty.propTypes = {
-  videoUrl: PropTypes.string,
-  text: PropTypes.string,
-  videoPlayOn: PropTypes.bool
+  videoId: PropTypes.string,
+  text: PropTypes.string
 };
 
 export default WeddingParty;

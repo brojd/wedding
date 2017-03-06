@@ -53,9 +53,8 @@ class WeddingContainer extends Component {
               largeText={home.largeText}
               date={date} />
         <WhiteWedding imgUrl={whiteWedding.imgUrl} text={whiteWedding.text} />
-        <WeddingParty videoUrl={weddingParty.videoUrl}
-                      text={weddingParty.text}
-                      videoPlayOn={this.state.partyVideoOn} />
+        <WeddingParty videoId={weddingParty.videoId}
+                      text={weddingParty.text} />
         <Hotel imgUrl={hotel.imgUrl} text={hotel.text} />
         <Transport text={transport.text}
                    videoId={transport.videoId}
