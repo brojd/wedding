@@ -37,8 +37,17 @@
   .time {
     font-size: 2rem; } }
 @media only screen and (max-width: 400px) {
-  .Countdown:last-child {
-    margin-right: 15px;
-    margin-top: 15px; } }
+  .Countdown {
+    width: 60px;
+    height: 60px; }
+    .Countdown:last-child {
+      margin-right: 15px;
+      margin-top: 15px; }
+
+  .heading {
+    font-size: 0.9rem; }
+
+  .time {
+    font-size: 1.8rem; } }
 
 /*# sourceMappingURL=Countdown.stylesheet.css.map */

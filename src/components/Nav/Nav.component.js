@@ -18,7 +18,7 @@ class Nav extends Component {
   }
 
   componentDidMount() {
-    window.scrollTo(0, 2);
+    window.scrollTo(0, 1);
   }
 
   render() {
@@ -36,6 +36,7 @@ class Nav extends Component {
       right: '16px',
       top: '4px'
     };
+    const offset = window.innerHeight < 500 ? -40 : -75;
     return (
       <span>
         <button type='button' onClick={this.toggleDropdown} className={styles.dropdownButton}>
@@ -43,13 +44,13 @@ class Nav extends Component {
           <span className="glyphicon glyphicon-menu-up" aria-hidden="true" style={closeStyles}></span>
         </button>
         <nav className={classNames(styles.Nav)} style={navStyles}>
-          <Link to='Home' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={-95}>Start</Link>
-          <Link to='WhiteWedding' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={-95}>Ślub</Link>
-          <Link to='WeddingParty' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={-95}>Wesele</Link>
-          <Link to='Hotel' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={-95}>Hotel</Link>
-          <Link to='Transport' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={-95}>Transport</Link>
-          <Link to='Gifts' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={-95}>Prezenty</Link>
-          <Link to='Contact' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={-95}>Kontakt</Link>
+          <Link to='Home' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={offset}>Start</Link>
+          <Link to='WhiteWedding' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={offset}>Ślub</Link>
+          <Link to='WeddingParty' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={offset}>Wesele</Link>
+          <Link to='Hotel' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={offset}>Hotel</Link>
+          <Link to='Transport' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={offset}>Transport</Link>
+          <Link to='Gifts' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={offset}>Prezenty</Link>
+          <Link to='Contact' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={offset}>Kontakt</Link>
         </nav>
       </span>
     )

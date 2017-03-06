@@ -47,9 +47,17 @@
 
 @media only screen and (max-width: 400px) {
   .Countdown {
+    width: 60px;
+    height: 60px;
     &:last-child {
       margin-right: 15px;
       margin-top: 15px;
     }
+  }
+  .heading {
+    font-size: 0.9rem;
+  }
+  .time {
+    font-size: 1.8rem;
   }
 }
