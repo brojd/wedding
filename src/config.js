@@ -9,15 +9,15 @@ module.exports = {
   },
   whiteWedding: {
     imgUrl: 'https://az-serwer1798119.online.pro/images/kosciol.jpg',
-    text: 'Ślub odbędzie się o godzinie 14:00 w kościele Św. Eugeniusza de Mazenod na ul. Ligonia 22 w Kędzierzynie-Koźlu. Pod kościołem będzie czekały autokary, którymi po mszy udamy się w miejsce wesela.'
+    text: 'Ślub odbędzie się o godzinie 14:00 w kościele Św. Eugeniusza de Mazenod przy ul. Ligonia 22 w Kędzierzynie-Koźlu. Pod kościołem będą czekały autokary, którymi po mszy udamy się w miejsce wesela.'
   },
   weddingParty: {
     videoId: '5rFeiznbSug',
-    text: '2 maja będziemy się bawić w karczmie Wrazidlok w Nieborowicach około 30 km od Kędzierzyna-Koźla. Będzie dużo jedzenia, picia, a o taneczny nastrój zadba zespół Grajmofon z Wrocławia. Przygotujcie się na zakwasy :)'
+    text: '2 maja będziemy się bawić w karczmie Wrazidlok w Nieborowicach około 30 km od Kędzierzyna-Koźla. Przygotujcie się na sporą dawkę jedzenia i picia, a o taneczny nastrój zadba zespół Grajmofon z Wrocławia. :)'
   },
   hotel: {
     imgUrl: 'https://az-serwer1798119.online.pro/images/hotel.jpg',
-    text: 'Wszystkich przyjezdnych ugościmy w hotelu Dworska Elektrownia na ul. Aleksandra Puszkina 1 w Kędzierzynie-Koźlu. Doba hotelowa trwa od 14:00 do 12:00, ale przed ślubem można zostawić rzeczy w hotelu. Następnego dnia zapraszamy do hotelowej restauracji na śniadanie.'
+    text: 'Wszystkich przyjezdnych ugościmy w hotelu Dworska Elektrownia przy ul. Aleksandra Puszkina 1 w Kędzierzynie-Koźlu. Doba hotelowa trwa od 14:00 do 12:00, ale od godziny 13:00 można zostawić rzeczy w pokojach. O 13:20 spod hotelu wyruszy autokar do kościoła. Następnego dnia zapraszamy na śniadanie do hotelowej restauracji, które będzie serwowane w godzinach 7:00 - 10:00.'
   },
   transport: {
     videoId: 'YjNmHHZ3ufM',
@@ -47,10 +47,10 @@ module.exports = {
   },
   gifts: {
     imgUrl: 'https://az-serwer1798119.online.pro/images/wrazidlok.jpg',
-    text: 'Goście nasi ukochani, my już w domu wszystko mamy. Chcecie coś nam podarować, dajcie śwince się radować! Dodatkowo zamiast kwiatów, które uschną w naszym domu, propozycje mamy taką: byśmy razem wino pili, konwenanse odrzucili! Niechaj rosną nam kwiateczki, Wy przynieście wina z beczki :)'
+    text: 'Goście nasi ukochani, my już w domu wszystko mamy. Chcecie coś nam podarować, dajcie śwince się radować! Dodatkowo zamiast kwiatów, które uschną w naszym domu, propozycje mamy taką: byśmy razem wino pili, konwenanse odrzucili! Niechaj rosną nam kwiateczki, Wy przynieście wina z beczki. :)'
   },
   contact: {
-    text: 'Jeżeli macie jakiekolwiek pytania lub chcielibyście potwierdzić obecność na weselu, skontaktujcie się z nami telefonicznie:',
+    text: 'Jeżeli macie jakiekolwiek pytania, skontaktujcie się z nami telefonicznie:',
     bridePhotoUrl: 'https://az-serwer1798119.online.pro/images/magda.png',
     groomPhotoUrl: 'https://az-serwer1798119.online.pro/images/don.png',
     bridePhone: '508 205 165',
