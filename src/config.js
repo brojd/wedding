@@ -21,7 +21,7 @@ module.exports = {
   },
   transport: {
     videoId: 'YjNmHHZ3ufM',
-    text: 'W trakcie całej uroczystości będziemy przemieszczać się dwoma wynajętymi autakarami. Poniżej znajdziecie rozpiskę odjazdów:',
+    text: 'W trakcie całej uroczystości będziemy przemieszczać się dwoma wynajętymi autokarami. Poniżej znajdziecie rozpiskę odjazdów:',
     schedule: [
       {
         time: '13:20',
