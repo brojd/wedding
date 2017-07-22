@@ -5,7 +5,7 @@ import CountdownContainer from '../../containers/Countdown/Countdown.container';
 
 const Home = ({ backgroundUrl, smallText, largeText, date }) => {
   const homeStyle = {
-    background: 'url(' + backgroundUrl + ') fixed center no-repeat',
+    background: 'url(' + backgroundUrl + ') fixed top center no-repeat',
     backgroundSize: 'cover'
   };
   const weddingDate = new Date(date);

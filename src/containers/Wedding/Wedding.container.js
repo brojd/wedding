@@ -65,7 +65,7 @@ class WeddingContainer extends Component {
                           groomPhotoUrl={contact.groomPhotoUrl}
                           bridePhone={contact.bridePhone}
                           groomPhone={contact.groomPhone} />
-        <Footer text="Copyright 2017 Dominik Broj" />
+        { /* <Footer text="Copyright 2017 Dominik Broj" /> */ }
       </div>
     )
   }

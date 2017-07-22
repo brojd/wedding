@@ -2,6 +2,7 @@
   background: rgba(241, 241, 241, 0.98);
   z-index: 5;
   width: 100%;
+  top: 0;
   position: fixed;
   height: 10vh;
   letter-spacing: 2px;
