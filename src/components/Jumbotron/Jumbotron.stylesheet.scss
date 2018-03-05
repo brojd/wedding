@@ -1,0 +1,30 @@
+//@import '../../global_styles/mixins';
+
+.Jumbotron {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+
+.headingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.heading {
+  color: white;
+  text-shadow: 2px 2px 3px #141414, -1px -1px #141414;
+  //@include heading($jumbotron-heading-font-size);
+  @media only screen and (max-width: 650px) {
+    //@include heading(2.5rem);
+    text-align: center;
+  }
+}
+
+.underlining {
+  border: 11px solid white;
+  width: 80px;
+  border-bottom: none;
+}

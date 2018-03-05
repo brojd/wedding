@@ -1,5 +1,9 @@
 .Home {
-  height: 105vh; }
+  height: 105vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30vh; }
 
 .backgroundWrapper {
   height: 105vh;
@@ -7,18 +11,13 @@
   z-index: 3; }
 
 .textWrapper {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
   text-align: center;
   z-index: 1;
   color: white;
   text-shadow: -1px -1px 3px black; }
 
 .countdownWrapper {
-  margin-top: 18vh; }
+  margin-top: 10vh; }
 
 .countdownHeading {
   margin-bottom: 30px; }

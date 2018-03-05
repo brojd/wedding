@@ -2,6 +2,8 @@ import React, { PropTypes } from 'react';
 import styles from './Home.stylesheet.css';
 import { Element } from 'react-scroll';
 import CountdownContainer from '../../containers/Countdown/Countdown.container';
+import Jumbotron from '../../components/Jumbotron/Jumbotron.component';
+import logo from './images/logo.png';
 
 const Home = ({ backgroundUrl, smallText, largeText, date }) => {
   const homeStyle = {
@@ -12,19 +14,19 @@ const Home = ({ backgroundUrl, smallText, largeText, date }) => {
   const dateToDisplay = `${weddingDate.getDate()}.${weddingDate.getMonth() + 1}.${weddingDate.getFullYear()}`;
   return (
     <Element name='Home'>
-      <section className={styles.Home} style={homeStyle}>
-        <div className={styles.backgroundWrapper}>
-          <div className={styles.textWrapper}>
-            <h2 className={styles.smallText}>{smallText}</h2>
-            <h1 className={styles.largeText}>{largeText}</h1>
-            <h2 className={styles.date}>{dateToDisplay}</h2>
-            <div className={styles.countdownWrapper}>
-              <h3 className={styles.countdownHeading}>Pozostało:</h3>
-              <CountdownContainer date={date} />
+      <Jumbotron>
+        <section className={styles.Home} style={homeStyle}>
+          <div className={styles.backgroundWrapper}>
+            <div className={styles.textWrapper}>
+              <img src={logo} alt="logo" />
+              <div className={styles.countdownWrapper}>
+                <h3 className={styles.countdownHeading}>Pozostało:</h3>
+                <CountdownContainer date={date} />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Jumbotron>
     </Element>
   )
 };
