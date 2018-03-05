@@ -8,7 +8,7 @@ import Transport from '../../components/Transport/Transport.component';
 import Gifts from '../../components/Gifts/Gifts.component';
 import Footer from '../../components/Footer/Footer.component';
 import ContactContainer from '../Contact/Contact.container';
-import { brideName, groomName, date, home, whiteWedding, weddingParty,
+import { date, home, whiteWedding, weddingParty,
   hotel, transport, gifts, contact } from '../../config';
 
 
@@ -45,9 +45,7 @@ class WeddingContainer extends Component {
   render() {
     return (
       <div>
-        <Header brideName={brideName}
-                groomName={groomName}
-                date={date} />
+        <Header />
         <Home backgroundUrl={home.backgroundUrl}
               smallText={home.smallText}
               largeText={home.largeText}

@@ -3,9 +3,9 @@
   z-index: 5;
   width: 100%;
   position: fixed;
-  height: 10vh;
+  height: 30px;
   letter-spacing: 2px;
-  padding: 0 20px;
+  padding: 0 200px;
   vertical-align: middle;
   text-transform: uppercase;
   line-height: 10vh;
