@@ -1,6 +1,8 @@
 .Gifts {
   height: 92vh;
-  overflow: hidden; }
+  overflow: hidden;
+  color: white;
+  background: linear-gradient(to bottom, #634730, #0e0a06); }
 
 .contentWrapper {
   height: 68vh;

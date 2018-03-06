@@ -35,8 +35,8 @@
 
 .dropdownButton {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -23px;
+  right: -20px;
   z-index: 6;
   display: none;
   height: 10vh;
@@ -47,18 +47,20 @@
   .dropdownButton:focus {
     outline: none; }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 850px) {
   .link {
     font-size: 1rem;
     letter-spacing: 1px;
     width: 80px;
     top: 0; } }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 580px) {
   .Nav {
     position: absolute;
-    top: 10vh;
+    top: 30px;
     right: 0;
-    left: 0; }
+    left: 0;
+    display: block;
+    height: auto; }
 
   .dropdownButton {
     display: inline-block; }

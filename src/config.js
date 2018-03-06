@@ -50,7 +50,7 @@ module.exports = {
     text: 'Goście nasi ukochani, my już w domu wszystko mamy. Chcecie coś nam podarować, dajcie śwince się radować! Dodatkowo zamiast kwiatów, które uschną w naszym domu, propozycje mamy taką: byśmy razem wino pili, konwenanse odrzucili! Niechaj rosną nam kwiateczki, Wy przynieście wina z beczki. :)'
   },
   contact: {
-    text: 'Jeżeli macie jakiekolwiek pytania, skontaktujcie się z nami telefonicznie:',
+    text: 'Jeżeli macie jakiekolwiek pytania, skontaktujcie się z nami telefonicznie lub mailowo:',
     bridePhotoUrl: 'https://az-serwer1798119.online.pro/images/magda.png',
     groomPhotoUrl: 'https://az-serwer1798119.online.pro/images/don.png',
     bridePhone: '508 205 165',

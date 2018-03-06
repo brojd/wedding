@@ -24,7 +24,8 @@ class WeddingParty extends Component {
         },
         events: {
           onReady: (event) => {
-            event.target.playVideo();
+            event.target.mute();
+            setTimeout(() => event.target.playVideo(), 1000);
           },
           onStateChange: (event) => {
             if (event.data === 0) {

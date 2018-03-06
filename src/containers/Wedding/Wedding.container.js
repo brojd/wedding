@@ -54,16 +54,16 @@ class WeddingContainer extends Component {
         <WeddingParty videoId={weddingParty.videoId}
                       text={weddingParty.text} />
         <Hotel imgUrl={hotel.imgUrl} text={hotel.text} />
-        <Transport text={transport.text}
-                   videoId={transport.videoId}
-                   schedule={transport.schedule} />
+        {/*<Transport text={transport.text}*/}
+                   {/*videoId={transport.videoId}*/}
+                   {/*schedule={transport.schedule} />*/}
         <Gifts text={gifts.text} imgUrl={gifts.imgUrl} />
         <ContactContainer text={contact.text}
                           bridePhotoUrl={contact.bridePhotoUrl}
                           groomPhotoUrl={contact.groomPhotoUrl}
                           bridePhone={contact.bridePhone}
                           groomPhone={contact.groomPhone} />
-        <Footer text="Copyright 2017 Dominik Broj" />
+        <Footer text="Copyright 2018 Dominik Broj" />
       </div>
     )
   }
