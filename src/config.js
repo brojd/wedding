@@ -55,5 +55,8 @@ module.exports = {
     groomPhotoUrl: 'https://az-serwer1798119.online.pro/images/don.png',
     bridePhone: '508 205 165',
     groomPhone: '698 892 831'
+  },
+  map: {
+    text: ''
   }
 };

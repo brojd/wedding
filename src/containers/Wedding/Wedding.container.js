@@ -6,10 +6,11 @@ import WeddingParty from '../../components/WeddingParty/WeddingParty.component';
 import Hotel from '../../components/Hotel/Hotel.component';
 import Transport from '../../components/Transport/Transport.component';
 import Gifts from '../../components/Gifts/Gifts.component';
+import Map from '../../components/Map/Map.component';
 import Footer from '../../components/Footer/Footer.component';
 import ContactContainer from '../Contact/Contact.container';
 import { date, home, whiteWedding, weddingParty,
-  hotel, transport, gifts, contact } from '../../config';
+  hotel, transport, gifts, contact, map } from '../../config';
 
 
 class WeddingContainer extends Component {
@@ -63,6 +64,7 @@ class WeddingContainer extends Component {
                           groomPhotoUrl={contact.groomPhotoUrl}
                           bridePhone={contact.bridePhone}
                           groomPhone={contact.groomPhone} />
+        <Map text={map.text} />
         <Footer text="Copyright 2018 Dominik Broj" />
       </div>
     )
