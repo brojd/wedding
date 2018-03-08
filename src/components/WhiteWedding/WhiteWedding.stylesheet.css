@@ -1,6 +1,7 @@
 .WhiteWedding {
-  height: 93vh;
-  overflow: hidden; }
+  height: 110vh;
+  overflow: hidden;
+  padding-top: 10vh; }
 
 .contentWrapper {
   height: 68vh;

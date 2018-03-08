@@ -1,5 +1,6 @@
 .Contact {
-  height: 92vh;
+  height: 110vh;
+  padding-top: 10vh;
 }
 
 .contentWrapper {
@@ -30,6 +31,16 @@
 @media only screen and (max-width: 700px) {
   .singleContact {
     font-size: 2vh;
+  }
+  .photo {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .singleContact {
+    display: block;
+    margin-bottom: 20px;
   }
   .photo {
     width: 70px;
