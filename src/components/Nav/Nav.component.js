@@ -51,6 +51,7 @@ class Nav extends Component {
           {/*<Link to='Transport' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Transport</Link>*/}
           <Link to='Gifts' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Prezenty</Link>
           <Link to='Contact' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Kontakt</Link>
+          <Link to='Map' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Dojazd</Link>
         </nav>
       </span>
     )
