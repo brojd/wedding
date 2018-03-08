@@ -3,8 +3,9 @@ import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
 import styles from './Hotel.stylesheet.css';
 import { Element } from 'react-scroll';
+import hotelImg from './images/hotel.png';
 
-const Hotel = ({ imgUrl, text }) => {
+const Hotel = ({ text }) => {
   return (
     <Element name="Hotel">
       <section className={styles.Hotel}>
@@ -12,7 +13,7 @@ const Hotel = ({ imgUrl, text }) => {
         <div className={styles.contentWrapper}>
           <SectionText text={text} />
           <div className={styles.imgWrapper}>
-            <img src={imgUrl} alt="hotel" className={styles.img} />
+            <img src={hotelImg} alt="hotel" className={styles.img} />
           </div>
         </div>
       </section>

@@ -3,8 +3,9 @@ import styles from './Gifts.stylesheet.css';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
 import { Element } from 'react-scroll';
+import gifts from './images/gifts.png';
 
-const Gifts = ({ imgUrl, text }) => {
+const Gifts = ({ text }) => {
   return (
     <Element name='Gifts'>
       <section className={styles.Gifts}>
@@ -12,7 +13,7 @@ const Gifts = ({ imgUrl, text }) => {
         <div className={styles.contentWrapper}>
           <SectionText text={text} />
           <div className={styles.imgWrapper}>
-            <img src={imgUrl} className={styles.img} alt="gifts" />
+            <img src={gifts} className={styles.img} alt="gifts" />
           </div>
         </div>
       </section>

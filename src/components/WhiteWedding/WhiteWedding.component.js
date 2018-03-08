@@ -3,8 +3,9 @@ import styles from './WhiteWedding.stylesheet.css';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import SectionText from '../SectionText/SectionText.component';
 import { Element } from 'react-scroll';
+import churchImg from './images/kosciol.png';
 
-const WhiteWedding = ({ imgUrl, text }) => {
+const WhiteWedding = ({ text }) => {
   return (
     <Element name='WhiteWedding'>
       <section className={styles.WhiteWedding}>
@@ -12,7 +13,7 @@ const WhiteWedding = ({ imgUrl, text }) => {
         <div className={styles.contentWrapper}>
           <SectionText text={text} />
           <div className={styles.imgWrapper}>
-            <img src={imgUrl} className={styles.img} alt="church" />
+            <img src={churchImg} className={styles.img} alt="church" />
           </div>
         </div>
       </section>

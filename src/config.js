@@ -3,7 +3,7 @@ module.exports = {
   groomName: 'Dominik',
   date: '2018-07-21T14:00:00',
   home: {
-    backgroundUrl: 'https://az-serwer1798119.online.pro/images/wrazidlok3.jpg',
+    // backgroundUrl: 'https://az-serwer1798119.online.pro/images/wrazidlok3.jpg',
     smallText: 'serdecznie zapraszamy na',
     largeText: 'ŚLUB I WESELICHO!'
   },
