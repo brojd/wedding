@@ -7,7 +7,7 @@ import brideImg from './images/bride.png';
 import groomImg from './images/groom.png';
 import babyImg from './images/baby.png';
 
-const Contact = ({ text, bridePhone, groomPhone }) => {
+const Contact = ({ text, text2, text3, bridePhone, groomPhone }) => {
   return (
     <Element name='Contact'>
       <section className={styles.Contact}>
@@ -28,6 +28,8 @@ const Contact = ({ text, bridePhone, groomPhone }) => {
               <div>{groomPhone}</div>
             </article>
           </section>
+          <SectionText text={text2} height={'10%'} />
+          <SectionText text={text3} height={'10%'} />
         </div>
       </section>
     </Element>

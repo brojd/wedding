@@ -60,6 +60,8 @@ class WeddingContainer extends Component {
                    {/*schedule={transport.schedule} />*/}
         <Gifts text={gifts.text} imgUrl={gifts.imgUrl} />
         <ContactContainer text={contact.text}
+                          text2={contact.text2}
+                          text3={contact.text3}
                           bridePhotoUrl={contact.bridePhotoUrl}
                           groomPhotoUrl={contact.groomPhotoUrl}
                           bridePhone={contact.bridePhone}

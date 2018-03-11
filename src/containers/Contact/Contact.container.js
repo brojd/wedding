@@ -6,6 +6,8 @@ class ContactContainer extends Component {
     return (
       <div>
         <Contact text={this.props.text}
+                 text2={this.props.text2}
+                 text3={this.props.text3}
                  bridePhotoUrl={this.props.bridePhotoUrl}
                  groomPhotoUrl={this.props.groomPhotoUrl}
                  bridePhone={this.props.bridePhone}

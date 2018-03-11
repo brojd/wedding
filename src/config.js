@@ -9,15 +9,15 @@ module.exports = {
   },
   whiteWedding: {
     imgUrl: 'https://az-serwer1798119.online.pro/images/kosciol.jpg',
-    text: 'Ślub odbędzie się o godzinie 14:00 w kościele Św. Eugeniusza de Mazenod przy ul. Ligonia 22 w Kędzierzynie-Koźlu. Pod kościołem będą czekały autokary, którymi po mszy udamy się w miejsce wesela.'
+    text: 'Ślub odbędzie się o godzinie 15:00 w kościele św. Elżbiety Węgierskiej w Kluczu. Po mszy udamy się do Sali Weselnej "Pod Złotym Rogiem" w Olszowej, gdzie będziemy się bawić do białego rana.'
   },
   weddingParty: {
-    videoId: '5rFeiznbSug',
-    text: '2 maja będziemy się bawić w karczmie Wrazidlok w Nieborowicach około 30 km od Kędzierzyna-Koźla. Przygotujcie się na sporą dawkę jedzenia i picia, a o taneczny nastrój zadba zespół Grajmofon z Wrocławia. :)'
+    videoId: 'WeZC_o_vUQg',
+    text: 'Podczas zabawy weselnej jedzenia i picia będzie Wam pod dostatkiem. O dobrą zabawę i humor gości zadba Wojtek z bractwa wodzirejów Freak Frak. Atrakcji będzie wiele, także szykujcie wygodne buty i kondycję, żeby wytrwać do samego końca!'
   },
   hotel: {
     imgUrl: 'https://az-serwer1798119.online.pro/images/hotel.jpg',
-    text: 'Wszystkich przyjezdnych ugościmy w hotelu Dworska Elektrownia przy ul. Aleksandra Puszkina 1 w Kędzierzynie-Koźlu. Doba hotelowa trwa od 14:00 do 12:00, ale od godziny 13:00 można zostawić rzeczy w pokojach. O 13:20 spod hotelu wyruszy autokar do kościoła. Następnego dnia zapraszamy na śniadanie do hotelowej restauracji, które będzie serwowane w godzinach 7:00 - 10:00.'
+    text: 'Drodzy przyjezdni goście, nie szukajcie noclegów w okolicy - my zajmiemy się wszystkim! Zadbamy o to, żebyście mogli skorzystać z gościnności hotelu "Złota Podkowa" znajdującego się w miejscu zabawy weselnej!'
   },
   transport: {
     videoId: 'YjNmHHZ3ufM',
@@ -47,14 +47,20 @@ module.exports = {
   },
   gifts: {
     imgUrl: 'https://az-serwer1798119.online.pro/images/wrazidlok.jpg',
-    text: 'Goście nasi ukochani, my już w domu wszystko mamy. Chcecie coś nam podarować, dajcie śwince się radować! Dodatkowo zamiast kwiatów, które uschną w naszym domu, propozycje mamy taką: byśmy razem wino pili, konwenanse odrzucili! Niechaj rosną nam kwiateczki, Wy przynieście wina z beczki. :)'
+    text: 'Chcąc ulżyć Waszej udręce jaką paczkę dać w prezencie,\n' +
+    'Młoda Para podpowiada i zarazem pięknie prosi,\n' +
+    'zamiast kwiatów i prezentów, by kuponik dać i grosik.\n' +
+    'Tyle, ile każ dy może, za co z góry\n' +
+    'Szczęść Wam Boże!!!'
   },
   contact: {
     text: 'Jeżeli macie jakiekolwiek pytania, skontaktujcie się z nami telefonicznie lub mailowo:',
+    text2: 'Liczymy na Waszą obecność!',
+    text3: 'Przypominamy, żeby potwierdzić swoją obecność najpóźniej do dnia 13.06.2018',
     bridePhotoUrl: 'https://az-serwer1798119.online.pro/images/magda.png',
     groomPhotoUrl: 'https://az-serwer1798119.online.pro/images/don.png',
     bridePhone: '508 205 165',
-    groomPhone: '698 892 831'
+    groomPhone: '698 892 831',
   },
   map: {
     text: ''

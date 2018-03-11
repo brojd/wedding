@@ -2,9 +2,12 @@ import React, { PropTypes } from 'react';
 import styles from './SectionText.stylesheet.css';
 import classNames from 'classnames';
 
-const SectionText = ({ text }) => {
+const SectionText = ({ text, height }) => {
   return (
-    <div className={classNames('container-fluid', styles.SectionText)}>
+    <div
+      className={classNames('container-fluid', styles.SectionText)}
+      style={{ height: height || '' }}
+    >
       <div className={classNames('col-md-6 col-md-offset-3', styles.textWrapper)}>
         <p className={styles.text}>
           {text}
@@ -15,7 +18,8 @@ const SectionText = ({ text }) => {
 };
 
 SectionText.propTypes = {
-  text: PropTypes.string
+  text: PropTypes.string,
+  height: PropTypes.string
 };
 
 export default SectionText;
