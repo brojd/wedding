@@ -1,15 +1,8 @@
 import React, { PropTypes } from 'react';
-import GoogleMapReact from 'google-map-react';
 import styles from './Map.stylesheet.css';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
-import SectionText from '../SectionText/SectionText.component';
 import { Element } from 'react-scroll';
 import config from '../../config.json';
-import churchMarker from './marker-church.png';
-import bedMarker from './marker-bed.png';
-
-const ChurchMarker = () => <img src={churchMarker} />;
-const BedMarker = () => <img src={bedMarker} />;
 
 const Map = ({ text }) => {
   return (
@@ -17,24 +10,12 @@ const Map = ({ text }) => {
       <section className={styles.Map}>
         <SectionHeading text="Dojazd" />
         <div className={styles.contentWrapper}>
-          <div className={styles.mapWrapper}>
-            <GoogleMapReact
-              defaultCenter={{ lat: 50.4464926, lng: 18.2620347 }}
-              defaultZoom={13}
-              bootstrapURLKeys={{
-                key: config.googleMapsKey
-              }}
-            >
-              <BedMarker
-                lat={50.4537614}
-                lng={18.2722056}
-              />
-              <ChurchMarker
-                lat={50.4357951}
-                lng={18.2779241}
-              />
-            </GoogleMapReact>
-          </div>
+          <iframe
+            src={`//www.google.pl/maps/embed/v1/directions?origin=Kościół+Rzymskokatolicki+Pw.+św.+Elżbiety+Węgierskiej+w+Kluczu&destination=Granary+Restaurant+Olszowa&key=${config.googleMapsKey}`}
+            allowFullScreen
+            height="100%"
+            width="100%"
+          />
         </div>
       </section>
     </Element>
