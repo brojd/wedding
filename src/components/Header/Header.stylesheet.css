@@ -28,5 +28,10 @@
 @media only screen and (max-width: 1025px) {
   .Header {
     padding: 0; } }
+@media only screen and (max-width: 580px) {
+  .Header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; } }
 
 /*# sourceMappingURL=Header.stylesheet.css.map */

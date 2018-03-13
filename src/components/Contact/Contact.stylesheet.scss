@@ -39,8 +39,7 @@
 
 @media only screen and (max-width: 500px) {
   .singleContact {
-    display: block;
-    margin-bottom: 20px;
+    min-width: 50px;
   }
   .photo {
     width: 70px;

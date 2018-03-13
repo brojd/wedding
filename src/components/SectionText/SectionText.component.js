@@ -9,9 +9,18 @@ const SectionText = ({ text, height }) => {
       style={{ height: height || '' }}
     >
       <div className={classNames('col-md-6 col-md-offset-3', styles.textWrapper)}>
-        <p className={styles.text}>
-          {text}
-        </p>
+        {
+          Array.isArray(text) ?
+          text.map(chunk => (
+            <p className={styles.chunk}>
+              {chunk}
+            </p>
+          ))
+          :
+          <p className={styles.text}>
+            {text}
+          </p>
+        }
       </div>
     </div>
   )

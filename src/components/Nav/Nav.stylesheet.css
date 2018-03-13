@@ -39,7 +39,6 @@
   right: -20px;
   z-index: 6;
   display: none;
-  height: 10vh;
   line-height: 10vh;
   background: none;
   border: none;
@@ -63,7 +62,9 @@
     height: auto; }
 
   .dropdownButton {
-    display: inline-block; }
+    display: inline-block;
+    top: -11px;
+    position: static; }
 
   .link {
     width: 100%;

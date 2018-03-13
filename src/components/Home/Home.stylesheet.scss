@@ -48,6 +48,11 @@
   font-style: italic;
 }
 
+.logo {
+  max-width: 70vw;
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 750px) {
   .smallText {
     font-size: 3rem;

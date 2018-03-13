@@ -40,7 +40,7 @@ class Home extends Component {
           <section className={styles.Home} style={homeStyle}>
             <div className={styles.backgroundWrapper}>
               <div className={styles.textWrapper}>
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" className={styles.logo} />
                 <div className={styles.countdownWrapper}>
                   <h3 className={styles.countdownHeading}>Pozostało:</h3>
                   <CountdownContainer date={this.props.date} timeRemaining={this.state.timeRemaining} />

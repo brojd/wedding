@@ -47,16 +47,16 @@ module.exports = {
   },
   gifts: {
     imgUrl: 'https://az-serwer1798119.online.pro/images/wrazidlok.jpg',
-    text: 'Chcąc ulżyć Waszej udręce jaką paczkę dać w prezencie,\n' +
-    'Młoda Para podpowiada i zarazem pięknie prosi,\n' +
-    'zamiast kwiatów i prezentów, by kuponik dać i grosik.\n' +
-    'Tyle, ile każ dy może, za co z góry\n' +
-    'Szczęść Wam Boże!!!'
+    text: ['Chcąc ulżyć Waszej udręce jaką paczkę dać w prezencie,',
+    'Młoda Para podpowiada i zarazem pięknie prosi,',
+    'zamiast kwiatów i prezentów, by kuponik dać i grosik.',
+    'Tyle, ile każdy może, za co z góry',
+    'Szczęść Wam Boże!!!']
   },
   contact: {
     text: 'Jeżeli macie jakiekolwiek pytania, skontaktujcie się z nami telefonicznie lub mailowo:',
     text2: 'Liczymy na Waszą obecność!',
-    text3: 'Przypominamy, żeby potwierdzić swoją obecność najpóźniej do dnia 13.06.2018',
+    text3: 'Przypominamy, abyście potwierdzili swoją obecność najpóźniej do dnia 13.06.2018',
     bridePhotoUrl: 'https://az-serwer1798119.online.pro/images/magda.png',
     groomPhotoUrl: 'https://az-serwer1798119.online.pro/images/don.png',
     bridePhone: '508 205 165',
