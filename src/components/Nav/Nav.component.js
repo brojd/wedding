@@ -45,13 +45,13 @@ class Nav extends Component {
         </button>
         <nav className={classNames(styles.Nav)} style={navStyles}>
           <Link to='Home' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={offset}>Start</Link>
-          <Link to='WhiteWedding' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Ślub</Link>
-          <Link to='WeddingParty' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Wesele</Link>
-          <Link to='Hotel' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Hotel</Link>
+          <Link to='WhiteWedding' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={10}>Ślub</Link>
+          <Link to='WeddingParty' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={0}>Wesele</Link>
+          <Link to='Hotel' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={0}>Hotel</Link>
           {/*<Link to='Transport' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Transport</Link>*/}
-          <Link to='Gifts' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Prezenty</Link>
-          <Link to='Contact' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Kontakt</Link>
-          <Link to='Map' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={50}>Dojazd</Link>
+          <Link to='Gifts' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={0}>Prezenty</Link>
+          <Link to='Contact' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={0}>Kontakt</Link>
+          <Link to='Map' smooth={true} spy={true} duration={600} className={styles.link} activeClass={styles.currentLink} offset={0}>Dojazd</Link>
         </nav>
       </span>
     )

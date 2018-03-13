@@ -7,7 +7,7 @@ import churchImg from './images/kosciol.png';
 
 const WhiteWedding = ({ text }) => {
   return (
-    <Element name='WhiteWedding'>
+    <Element name="WhiteWedding" id="WhiteWedding">
       <section className={styles.WhiteWedding}>
         <SectionHeading text="ślub" />
         <div className={styles.contentWrapper}>

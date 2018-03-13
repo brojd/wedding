@@ -39,9 +39,9 @@ class WeddingParty extends Component {
 
   render() {
     return (
-      <Element name="WeddingParty" id="WeddingParty">
+      <Element>
         <section className={styles.WeddingParty}>
-          <SectionHeading text='Wesele' />
+          <div name="WeddingParty" id="WeddingParty"><SectionHeading text='Wesele' /></div>
           <SectionText text={this.props.text} />
           <div id="partyVideo" className={styles.video}></div>
         </section>
