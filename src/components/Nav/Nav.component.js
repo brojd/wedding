@@ -23,7 +23,7 @@ class Nav extends Component {
 
   render() {
     const navStyles = {
-      // maxHeight: !this.state.dropdownVisible && window.innerWidth < 980 ? 0 : '300px'
+      maxHeight: !this.state.dropdownVisible && window.innerWidth < 580 ? 0 : '300px'
     };
     const openStyles = {
       opacity: this.state.dropdownVisible ? 0 : 1,

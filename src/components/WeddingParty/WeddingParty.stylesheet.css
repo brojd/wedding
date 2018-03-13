@@ -12,7 +12,8 @@
   left: -15%;
   width: 140%;
   height: 160%;
-  z-index: -1; }
+  z-index: -1;
+  background: linear-gradient(to bottom, #634730, #0e0a06); }
 
 @media only screen and (max-width: 1200px) {
   .video {

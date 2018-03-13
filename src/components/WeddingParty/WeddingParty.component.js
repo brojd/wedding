@@ -20,11 +20,11 @@ class WeddingParty extends Component {
           cc_load_policy: 0,
           iv_load_policy: 3,
           autohide: 1,
-          start: 75
+          start: 0
         },
         events: {
           onReady: (event) => {
-            event.target.mute();
+            // event.target.mute();
             setTimeout(() => event.target.playVideo(), 1000);
           },
           onStateChange: (event) => {
@@ -39,7 +39,7 @@ class WeddingParty extends Component {
 
   render() {
     return (
-      <Element name='WeddingParty'>
+      <Element name="WeddingParty" id="WeddingParty">
         <section className={styles.WeddingParty}>
           <SectionHeading text='Wesele' />
           <SectionText text={this.props.text} />

@@ -11,7 +11,7 @@ const Map = ({ text }) => {
         <SectionHeading text="Dojazd" />
         <div className={styles.contentWrapper}>
           <iframe
-            src={`//www.google.pl/maps/embed/v1/directions?origin=Kościół+Rzymskokatolicki+Pw.+św.+Elżbiety+Węgierskiej+w+Kluczu&destination=Granary+Restaurant+Olszowa&language=pl&key=${config.googleMapsKey}`}
+            src={`https://www.google.pl/maps/embed/v1/directions?origin=Kościół+Rzymskokatolicki+Pw.+św.+Elżbiety+Węgierskiej+w+Kluczu&destination=Granary+Restaurant+Olszowa&language=pl&key=${config.googleMapsKey}`}
             allowFullScreen
             height="100%"
             width="100%"
