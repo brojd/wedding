@@ -7,7 +7,7 @@ import { Element } from 'react-scroll';
 class WeddingParty extends Component {
 
   componentDidMount() {
-    window.setTimeout(() => {
+    window.innerWidth >= 580 && window.setTimeout(() => {
       new window.YT.Player('partyVideo', {
         videoId: this.props.videoId,
         playerVars: {
@@ -40,10 +40,10 @@ class WeddingParty extends Component {
   render() {
     return (
       <Element>
-        <section className={styles.WeddingParty}>
+        <section className={`${styles.WeddingParty} ${window.innerWidth < 580 ? styles.videoReplacement : null}`}>
           <div name="WeddingParty" id="WeddingParty"><SectionHeading text='Wesele' /></div>
           <SectionText text={this.props.text} />
-          <div id="partyVideo" className={styles.video}></div>
+          <div id="partyVideo" className={styles.video} />
         </section>
       </Element>
     )
