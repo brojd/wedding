@@ -59,8 +59,8 @@ module.exports = {
     text3: 'Przypominamy, abyście potwierdzili swoją obecność najpóźniej do dnia 13.06.2018',
     bridePhotoUrl: 'https://az-serwer1798119.online.pro/images/magda.png',
     groomPhotoUrl: 'https://az-serwer1798119.online.pro/images/don.png',
-    bridePhone: '508 205 165',
-    groomPhone: '698 892 831',
+    bridePhone: '+48 692 686 040',
+    groomPhone: '+48 666 975 900',
   },
   map: {
     text: ''

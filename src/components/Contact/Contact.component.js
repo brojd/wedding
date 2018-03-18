@@ -21,7 +21,7 @@ const Contact = ({ text, text2, text3, bridePhone, groomPhone }) => {
             </article>
             <article className={styles.singleContact}>
               <img src={babyImg} alt="groom" className={styles.photo} />
-              <div>martadamianbroj@gmail.com</div>
+              <div>mdbroj@gmail.com</div>
             </article>
             <article className={styles.singleContact}>
               <img src={groomImg} alt="groom" className={styles.photo} />

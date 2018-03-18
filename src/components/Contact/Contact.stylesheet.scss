@@ -18,6 +18,9 @@
 .singleContact {
   display: inline-block;
   min-width: 120px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .photo {
