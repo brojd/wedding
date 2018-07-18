@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import styles from './Map.stylesheet.css';
 import SectionHeading from '../SectionHeading/SectionHeading.component';
 import { Element } from 'react-scroll';
+import img from './img.JPG';
 import config from '../../config.json';
 
 const Map = ({ text }) => {
@@ -9,6 +10,7 @@ const Map = ({ text }) => {
     <Element name='Map'>
       <section className={styles.Map}>
         <SectionHeading text="Dojazd" />
+        <img src={img} alt={'sign'}  className={styles.imgSign} />
         <div className={styles.contentWrapper}>
           <iframe
             src={`https://www.google.pl/maps/embed/v1/directions?origin=Klucz,+Polska&destination=Park+Miniatur+Olszowa&language=pl&key=${config.googleMapsKey}`}

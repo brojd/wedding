@@ -1,5 +1,5 @@
 .Map {
-  height: 110vh;
+  min-height: 110vh;
   padding-top: 10vh;
   overflow: hidden;
   color: white;
@@ -15,5 +15,18 @@
   height: 100%;
   margin-top: 30px;
   position: relative;
+}
+
+.imgSign {
+  margin: 0 auto 20px auto;
+  border-radius: 5px;
+  display: block;
+}
+
+@media only screen and (max-width: 680px) {
+  .imgSign {
+    width: 100%;
+    height: auto;
+  }
 }
 
